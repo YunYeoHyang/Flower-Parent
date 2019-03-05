@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="flo_web_common" />
+        <module name="flo_web_auth_common" />
+        <module name="flo_web_eureka_service" />
+        <module name="flo_web_service" />
+        <module name="flo_web_cart" />
+        <module name="flo_web_pojo" />
+        <module name="flo_web_gateway" />
+        <module name="flo_web_auth_service" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Flower-Parent" options="-parameters" />
+      <module name="flo_web_auth" options="-parameters" />
+      <module name="flo_web_auth_common" options="-parameters" />
+      <module name="flo_web_auth_service" options="-parameters" />
+      <module name="flo_web_cart" options="-parameters" />
+      <module name="flo_web_common" options="-parameters" />
+      <module name="flo_web_eureka_service" options="-parameters" />
+      <module name="flo_web_gateway" options="-parameters" />
+      <module name="flo_web_pojo" options="-parameters" />
+      <module name="flo_web_service" options="-parameters" />
+    </option>
+  </component>
+</project>

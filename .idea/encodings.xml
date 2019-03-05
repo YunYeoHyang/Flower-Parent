@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_auth/flo_web_auth_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_auth/flo_web_auth_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_cart" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_eureka_service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_pojo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/flo_web_service" charset="UTF-8" />
+  </component>
+</project>
