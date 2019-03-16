@@ -18,6 +18,7 @@ public class ProductDetailsService {
      * @return
      */
     public ProductDetails findById(Integer sku){
+
         return productDetailsMapper.findDetailsBySku(sku);
     }
 }

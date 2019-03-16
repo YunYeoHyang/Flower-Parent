@@ -53,3 +53,8 @@ sc:
       - /findByPid
       - /addReviews
       - /findUser
+      - /findAllTeb
+      - /findAllCategories
+      - /findGalleryDetailsById
+      - /findGallery
+      - /findGallerys

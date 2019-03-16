@@ -13,9 +13,6 @@ public class ProductService {
     @Resource
     private ProductMapper productMapper;
 
-
-
-
     /**
      * 查询所有商品
      * @return

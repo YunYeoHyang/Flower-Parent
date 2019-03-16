@@ -24,7 +24,6 @@ public class ProductReviewsController {
     @PostMapping("/addReviews")
     private ResponseEntity<Object> addReviews(@RequestBody ProductReviews productReviews){
 
-        System.out.println(productReviews);
         productReviewsService.addProductReviews(productReviews);
 
         return ResponseEntity.ok( new BaseResult(0 , "成功"));

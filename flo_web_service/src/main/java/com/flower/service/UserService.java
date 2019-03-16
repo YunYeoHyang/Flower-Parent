@@ -20,26 +20,28 @@ public class UserService {
      */
     public void saveUser(User user){
 
+        // 默认添加头像
         user.setFace("assets/images/blog/comment/2.jpg");
+
+        // 添加User
         userMapper.insert(user);
     }
 
+    /**
+     * 通过手机号查询对应User类
+     * @param phone
+     * @return
+     */
     public User findByMobile(String phone) {
 
+        // 创建 Example
         Example example = new Example(User.class);
+
+        // 匹配条件
         Example.Criteria criteria = example.createCriteria();
         criteria.andEqualTo("phone" , phone);
+
+        // 返回
         return this.userMapper.selectOneByExample( example );
-    }
-
-    public User findUser(String phone) {
-
-        Example example = new Example(User.class);
-
-        Example.Criteria criteria = example.createCriteria();
-        criteria.andEqualTo("phone", phone);
-
-        User u = userMapper.selectOneByExample(example);
-        return u;
     }
 }

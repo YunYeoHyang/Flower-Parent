@@ -5,6 +5,6 @@ import lombok.Data;
 @Data
 public class CartRequest {
 
-    private Integer sku ;
-    private Integer count;
+    private Integer sku ; // sku
+    private Integer count; // 数量
 }

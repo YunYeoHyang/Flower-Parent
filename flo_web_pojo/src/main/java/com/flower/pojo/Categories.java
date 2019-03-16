@@ -6,7 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.Date;
 
 @Table(name = "categories")
 @Data
@@ -17,11 +16,8 @@ public class Categories {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // 分类主键
 
-    @Column(name="create_time")
-    private Date createTime;
-
-    @Column(name="tittle")
-    private String tittle;
+    @Column(name="name")
+    private String name; // 标题
 }

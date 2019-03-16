@@ -7,29 +7,21 @@ import lombok.ToString;
 
 import javax.persistence.*;
 
-@Table(name = "product")
+@Table(name = "gallery")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @ToString
-public class Product {
+public class Gallery {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id; // 主键
 
     @Column(name="name")
-    private String name; // 物品名
+    private String name; // 标题
 
     @Column(name="image")
     private String image; // 图片
 
-    @Column(name="price")
-    private double price; // 价格
-
-    @Column(name="description")
-    private String description; // 描述
-
-    @Column(name="sku")
-    private Integer sku; // sku
 }

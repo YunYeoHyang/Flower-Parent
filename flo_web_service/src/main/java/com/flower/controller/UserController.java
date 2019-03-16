@@ -43,19 +43,15 @@ public class UserController {
 
         // 非空判断&密码校验
         if(user == null || !user.getPassword().equals(password)){
-
             return ResponseEntity.ok( null );
         }
-
         return ResponseEntity.ok( user );
     }
 
     @PostMapping("/findUser/{phone}")
     public ResponseEntity<Object> findUser(@PathVariable("phone") String phone ){
 
-        System.out.println(phone);
-
-        User user = this.userService.findUser(phone);
+        User user = this.userService.findByMobile(phone);
 
         return ResponseEntity.ok( new BaseResult(0 , "成功").append("user" , user));
     }

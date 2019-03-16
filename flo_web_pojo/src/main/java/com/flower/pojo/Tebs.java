@@ -16,8 +16,8 @@ public class Tebs {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // 主键
 
     @Column(name="name")
-    private String name;
+    private String name; // 标签名
 }

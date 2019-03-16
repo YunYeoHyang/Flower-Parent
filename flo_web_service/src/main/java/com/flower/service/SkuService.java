@@ -22,14 +22,11 @@ public class SkuService {
      */
     public OneSkuResult findSkuById(Integer sku){
 
-        /**
-         * 新建一个 OneSkuResult 对象
-         */
+        // 新建一个 OneSkuResult 对象
         OneSkuResult skuResult = new OneSkuResult();
 
+        // 根据sku查找ProductDetails类
         Product productDetails = productMapper.selectBySku(sku);
-
-        System.out.println(productDetails);
 
         /**  2.
          * 赋值
@@ -45,7 +42,7 @@ public class SkuService {
         // 图片
         skuResult.setImage(productDetails.getImage());
 
-        /**  4.
+        /**  3.
          * 返回结果
          */
         return skuResult;

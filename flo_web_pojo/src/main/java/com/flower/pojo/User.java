@@ -16,23 +16,23 @@ public class User {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long uid;
+    private Long uid; // 主键
 
     @Column(name="user_name")
-    private String name;
+    private String name; // 名字
 
     @Column(name="password")
-    private String password;
+    private String password; // 密码
 
     @Column(name="sex")
-    private String sex;
+    private String sex; // 性别
 
     @Column(name="email")
-    private String email;
+    private String email; // 邮箱
 
     @Column(name="phone")
-    private String phone;
+    private String phone; // 手机号
 
     @Column(name="face")
-    private String face;
+    private String face; // 头像
 }

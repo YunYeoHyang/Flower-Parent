@@ -16,19 +16,19 @@ public class ProductReviews {
 
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    private Long id;
+    private Long id; // 主键
 
     @Column(name="word")
-    private String word;
+    private String word; // 评论语句
 
     @Column(name="star")
-    private Integer star;
+    private Integer star; // 星级
 
     @Column(name="uid")
-    private Long uid;
-    private User user;
+    private Long uid; // user表外键
+    private User user; // User类
 
     @Column(name="pid")
-    private Integer pid;
-    private ProductDetails productDetails;
+    private Integer pid; // ProductDetails表外键
+    private ProductDetails productDetails; // Product Details类
 }
